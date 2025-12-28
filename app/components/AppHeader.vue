@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-
+const showMobileMenu = ref(false)
 const items = computed(() => [
   {
     label: 'Home',
@@ -88,6 +88,9 @@ const items = computed(() => [
     active: route.path.startsWith('/contact')
   } */
 ])
+watch(() => route.path, () => {
+  showMobileMenu.value = false
+})
 </script>
 <template>
   <UHeader>

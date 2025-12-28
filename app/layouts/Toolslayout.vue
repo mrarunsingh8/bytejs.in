@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
-
+const showSidebar = ref(false)
 const items: NavigationMenuItem[] = [
     {
         label: 'URL Shortener',
@@ -39,15 +39,31 @@ const items: NavigationMenuItem[] = [
     }
 ]
 </script>
-
 <template>
     <UApp>
         <AppHeader />
         <UMain class="flex">
             <UContainer>
-                <div class="flex h-[calc(100vh-4rem)] bg-background">
+                <div class="flex flex-col lg:flex-row h-[calc(100vh-4rem)] bg-background">
+                    <!-- Mobile Toggle Button -->
+                    <div class="lg:hidden flex items-center p-4 border-b border-default">
+                        <button
+                            @click="showSidebar = !showSidebar"
+                            class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+                        >
+                            <UIcon :name="showSidebar ? 'i-lucide-panel-top-open' : 'i-lucide-panel-top-close'" />
+                            <span class="text-sm font-medium">Tools</span>
+                        </button>
+                    </div>
+
                     <!-- Sidebar -->
-                    <aside class="w-82 border-r border-default overflow-hidden">
+                    <aside 
+                        :class="[
+                            'w-full lg:w-82 border-b lg:border-b-0 lg:border-r border-default overflow-hidden',
+                            'max-h-64 lg:max-h-none lg:block',
+                            showSidebar ? 'block' : 'hidden'
+                        ]"
+                    >
                         <div class="flex flex-col h-full">
 
                             <!-- Sidebar Header -->
@@ -66,7 +82,7 @@ const items: NavigationMenuItem[] = [
                     </aside>
 
                     <!-- Body Panel -->
-                    <main class="flex-1 p-6">
+                    <main class="flex-1 p-4 lg:p-6 overflow-y-auto">
                         <slot />
                     </main>
                 </div>

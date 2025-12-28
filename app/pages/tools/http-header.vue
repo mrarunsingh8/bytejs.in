@@ -125,9 +125,9 @@ const items = ref([
             </div>
 
             <!-- Info -->
-            <div class="mt-12 p-6 rounded-xl bg-slate-800/40">
+            <div class="mt-12 p-6 rounded-xl bg-slate-800/5 dark:bg-slate-50/5">
                 <h2 class="text-lg font-semibold mb-3">About HTTP Header Checker</h2>
-                <p class="text-sm text-slate-400 leading-relaxed">
+                <p class="text-sm leading-relaxed">
                     This tool retrieves and displays HTTP response headers for a given URL.
                     It helps developers inspect security headers, caching policies, content
                     types, and server configurations quickly and efficiently.

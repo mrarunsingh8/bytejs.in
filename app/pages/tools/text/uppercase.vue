@@ -126,7 +126,7 @@ const items = ref([
             </div>
 
             <!-- Info Card -->
-            <div class="mt-12 p-6 rounded-xl bg-slate-800/40">
+            <div class="mt-12 p-6 rounded-xl bg-slate-800/5 dark:bg-slate-50/5">
                 <h2 class="text-lg font-semibold mb-3">About Uppercase Converter</h2>
                 <p class="text-sm text-slate-400 leading-relaxed">
                     This tool converts all lowercase letters in your text to uppercase (capital letters). 
