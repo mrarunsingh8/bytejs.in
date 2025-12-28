@@ -55,7 +55,7 @@ const items = ref([
                     <p class="text-muted mt-2">
                         Convert text to lower case, upper case, or title case.
                     </p>
-                    <UButton to="/tools/text-case" variant="link" class="mt-4 p-0">
+                    <UButton to="/tools/text/uppercase" variant="link" class="mt-4 p-0">
                         Open tool →
                     </UButton>
                 </UCard>
@@ -85,7 +85,7 @@ const items = ref([
                     <p class="text-muted mt-2">
                         Inspect and validate HTTP request and response headers.
                     </p>
-                    <UButton to="/tools/http-headers" variant="link" class="mt-4 p-0">
+                    <UButton to="/tools/http-header" variant="link" class="mt-4 p-0">
                         Open tool →
                     </UButton>
                 </UCard>
