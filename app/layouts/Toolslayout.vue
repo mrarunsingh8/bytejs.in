@@ -4,7 +4,7 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items: NavigationMenuItem[] = [
     {
         label: 'URL Shortener',
-        icon: 'i-lucide-link-2',
+        icon: 'i-lucide-link',
         to: '/byteurl'
     },
     {
@@ -25,7 +25,7 @@ const items: NavigationMenuItem[] = [
     {
         label: 'HTTP Header Checker',
         icon: 'i-lucide-server',
-        to: '/tools/http-header-checker'
+        to: '/tools/http-header'
     },
     {
         label: 'Text Converter',
