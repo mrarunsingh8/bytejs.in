@@ -5,18 +5,9 @@
       description="ByteJS is an online platform that provides a collection of fast, reliable, and easy-to-use tools designed to simplify everyday development tasks."
       :links="[{
         label: 'Get started',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-        target: '_blank',
+        to: '/tools',
         trailingIcon: 'i-lucide-arrow-right',
         size: 'xl'
-      }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-templates/starter',
-        target: '_blank',
-        icon: 'i-simple-icons-github',
-        size: 'xl',
-        color: 'neutral',
-        variant: 'subtle'
       }]"
     />
 

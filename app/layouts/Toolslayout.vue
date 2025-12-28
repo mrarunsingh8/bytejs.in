@@ -5,12 +5,12 @@ const items: NavigationMenuItem[] = [
     {
         label: 'URL Shortener',
         icon: 'i-lucide-link',
-        to: '/byteurl'
+        to: '/tools/byteurl'
     },
     {
         label: 'QR Code Generator',
         icon: 'i-lucide-qr-code',
-        to: '/tools/qr'
+        to: '/tools/qr-code'
     },
     {
         label: 'UUID Generator',
@@ -20,7 +20,7 @@ const items: NavigationMenuItem[] = [
     {
         label: 'JSON Formatter',
         icon: 'i-lucide-braces',
-        to: '/tools/json'
+        to: '/tools/json-formatter'
     },
     {
         label: 'HTTP Header Checker',
