@@ -45,28 +45,28 @@ const items = computed(() => [
         label: 'HTTP Header Checker',
         description: 'Check and analyze HTTP headers of any URL.',
         icon: 'i-lucide-server',
-        to: '/tools/http-headers',
-        active: route.path === '/tools/http-headers'
+        to: '/tools/http-header',
+        active: route.path === '/tools/http-header'
       },
       {
         label: 'Upper Case',
         description: 'Convert text to upper case quickly.',
         to: '/tools/text/uppercase',
-        icon: 'i-lucide-text',
+        icon: 'i-lucide-case-upper',
         active: route.path === '/tools/text/uppercase'
       },
       {
         label: 'Lower Case',
         description: 'Convert text to lower case easily.',
         to: '/tools/text/lowercase',
-        icon: 'i-lucide-text',
+        icon: 'i-lucide-case-lower',
         active: route.path === '/tools/text/lowercase'
       },
       {
         label: 'Title Case',
         description: 'Transform text to title case format.',
         to: '/tools/text/titlecase',
-        icon: 'i-lucide-text',
+        icon: 'i-lucide-case-sensitive',
         active: route.path === '/tools/text/titlecase'
       }
     ]

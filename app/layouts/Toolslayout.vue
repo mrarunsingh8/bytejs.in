@@ -32,9 +32,9 @@ const items: NavigationMenuItem[] = [
         icon: 'i-lucide-text',
         defaultOpen: true,
         children: [
-            { label: 'Upper Case', to: '/tools/text/uppercase' },
-            { label: 'Lower Case', to: '/tools/text/lowercase' },
-            { label: 'Title Case', to: '/tools/text/titlecase' }
+            { label: 'Upper Case', icon: 'i-lucide-case-upper', to: '/tools/text/uppercase' },
+            { label: 'Lower Case', icon: 'i-lucide-case-lower', to: '/tools/text/lowercase' },
+            { label: 'Title Case', icon: 'i-lucide-case-sensitive', to: '/tools/text/titlecase' }
         ]
     }
 ]

@@ -4,23 +4,23 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/favicon-16.png' }
   ],
   htmlAttrs: {
     lang: 'en'
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'ByteJS – Free Online Developer Tools: URL Shortener, QR Codes, JSON Formatter'
+const description = 'ByteJS is a free all-in-one toolkit for developers. Create short URLs, generate QR codes, format & validate JSON, check HTTP headers, generate UUIDs, and more.'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  ogImage: 'https://bytejs.in/og-image.png',
+  twitterImage: 'https://bytejs.in/og-image.png',
   twitterCard: 'summary_large_image'
 })
 

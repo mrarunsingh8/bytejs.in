@@ -27,7 +27,7 @@ const checkHeaders = async () => {
         let output = `HTTP/1.1 ${response.status} ${response.statusText}\n`
 
         response.headers.forEach((value, key) => {
-        output += `${key}: ${value}\n`
+            output += `${key}: ${value}\n`
         })
         headersOutput.value = output
     } catch (error) {
@@ -90,14 +90,16 @@ const items = ref([
             </div>
 
             <!-- Action -->
-            <div class="flex gap-3">
+            <div class="flex flex-col md:flex-row gap-3">
                 <UFieldGroup class="w-full">
                     <UInput class="w-full" v-model="url" placeholder="https://example.com" :ui="{
                         base: 'pl-14.5',
                         leading: 'pointer-events-none'
                     }">
                         <template #leading>
-                            <span class="iconify i-lucide:link shrink-0 size-5 text-dimmed group-hover:text-default transition-colors" aria-hidden="true" data-slot="linkLeadingIcon"></span>
+                            <span
+                                class="iconify i-lucide:link shrink-0 size-5 text-dimmed group-hover:text-default transition-colors"
+                                aria-hidden="true" data-slot="linkLeadingIcon"></span>
                         </template>
                     </UInput>
                 </UFieldGroup>
